@@ -1,0 +1,38 @@
+create = 
+
+mutation {
+  createUser(name: "New Name", age: 47, email: "new@example.com") {
+    id
+    name
+    age
+    email
+  }
+}
+
+read = 
+
+query {
+  users {
+    id
+    name
+    age
+    email
+  }
+}
+
+Update =
+
+mutation {
+  updateUser(id: "_id", name: "New Name", age: 30, email: "new@example.com") {
+    id
+    name
+    age
+    email
+  }
+}
+
+delete =
+
+mutation {
+  deleteUser(id: "_id")
+}
